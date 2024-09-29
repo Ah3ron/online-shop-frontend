@@ -5,5 +5,6 @@ RUN npm install -g pnpm
 RUN pnpm install
 COPY . .
 EXPOSE 3000
+RUN pnpm run build
 CMD ["pnpm", "run", "preview"]
 
